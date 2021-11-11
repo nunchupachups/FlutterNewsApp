@@ -11,7 +11,7 @@ class News {
 
   Future<void> getNews() async {
 
-    var response = await get('http://newsapi.org/v2/top-headlines?country=us&apiKey=52489cf346804f2eb180b8e34528aa26');
+    var response = await get('http://newsapi.org/v2/top-headlines?country=us&apiKey=d5c17fe1d9064f7fa42d0c9395e4be29');
     var jsonData = jsonDecode(response.body);
 
 
@@ -57,7 +57,7 @@ class CategoryNews {
 
   Future<void> getNews(String category) async {
 
-    var response = await get('http://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=52489cf346804f2eb180b8e34528aa26');
+    var response = await get('http://newsapi.org/v2/top-headlines?country=us&category=$category&apiKey=d5c17fe1d9064f7fa42d0c9395e4be29');
     var jsonData = jsonDecode(response.body);
 
 
